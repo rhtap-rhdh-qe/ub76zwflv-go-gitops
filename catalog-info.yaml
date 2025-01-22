@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ub76zwflv-go-gitops
+  description: This is GitOps manifest for ub76zwflv-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: ub76zwflv-go
+    backstage.io/kubernetes-id: ub76zwflv-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: ub76zwflv-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ub76zwflv-go

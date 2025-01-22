@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ub76zwflv-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/ub76zwflv-go
